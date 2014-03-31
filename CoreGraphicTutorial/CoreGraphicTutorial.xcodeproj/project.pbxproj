@@ -14,13 +14,15 @@
 		D7886B5A18E96CDB00285828 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7886B5918E96CDB00285828 /* main.m */; };
 		D7886B5E18E96CDB00285828 /* XXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7886B5D18E96CDB00285828 /* XXAppDelegate.m */; };
 		D7886B6118E96CDB00285828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7886B5F18E96CDB00285828 /* Main.storyboard */; };
-		D7886B6418E96CDB00285828 /* XXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7886B6318E96CDB00285828 /* XXViewController.m */; };
 		D7886B6618E96CDB00285828 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7886B6518E96CDB00285828 /* Images.xcassets */; };
 		D7886B6D18E96CDB00285828 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7886B6C18E96CDB00285828 /* XCTest.framework */; };
 		D7886B6E18E96CDB00285828 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7886B4D18E96CDB00285828 /* Foundation.framework */; };
 		D7886B6F18E96CDB00285828 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7886B5118E96CDB00285828 /* UIKit.framework */; };
 		D7886B7718E96CDB00285828 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7886B7518E96CDB00285828 /* InfoPlist.strings */; };
 		D7886B7918E96CDB00285828 /* CoreGraphicTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7886B7818E96CDB00285828 /* CoreGraphicTutorialTests.m */; };
+		D7886B8418E96DCB00285828 /* CoolTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7886B8318E96DCB00285828 /* CoolTableViewController.m */; };
+		D7886B8818E973E200285828 /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = D7886B8718E973E200285828 /* CustomCellBackground.m */; };
+		D7886B8B18E9756F00285828 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = D7886B8A18E9756F00285828 /* Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,18 @@
 		D7886B5C18E96CDB00285828 /* XXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXAppDelegate.h; sourceTree = "<group>"; };
 		D7886B5D18E96CDB00285828 /* XXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXAppDelegate.m; sourceTree = "<group>"; };
 		D7886B6018E96CDB00285828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D7886B6218E96CDB00285828 /* XXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXViewController.h; sourceTree = "<group>"; };
-		D7886B6318E96CDB00285828 /* XXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXViewController.m; sourceTree = "<group>"; };
 		D7886B6518E96CDB00285828 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D7886B6B18E96CDB00285828 /* CoreGraphicTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreGraphicTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7886B6C18E96CDB00285828 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D7886B7418E96CDB00285828 /* CoreGraphicTutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreGraphicTutorialTests-Info.plist"; sourceTree = "<group>"; };
 		D7886B7618E96CDB00285828 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7886B7818E96CDB00285828 /* CoreGraphicTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicTutorialTests.m; sourceTree = "<group>"; };
+		D7886B8218E96DCB00285828 /* CoolTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolTableViewController.h; sourceTree = "<group>"; };
+		D7886B8318E96DCB00285828 /* CoolTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolTableViewController.m; sourceTree = "<group>"; };
+		D7886B8618E973E200285828 /* CustomCellBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellBackground.h; sourceTree = "<group>"; };
+		D7886B8718E973E200285828 /* CustomCellBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackground.m; sourceTree = "<group>"; };
+		D7886B8918E9756F00285828 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		D7886B8A18E9756F00285828 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +118,16 @@
 		D7886B5318E96CDB00285828 /* CoreGraphicTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				D7886B8518E973B500285828 /* CustomDrawing */,
 				D7886B5C18E96CDB00285828 /* XXAppDelegate.h */,
 				D7886B5D18E96CDB00285828 /* XXAppDelegate.m */,
 				D7886B5F18E96CDB00285828 /* Main.storyboard */,
-				D7886B6218E96CDB00285828 /* XXViewController.h */,
-				D7886B6318E96CDB00285828 /* XXViewController.m */,
 				D7886B6518E96CDB00285828 /* Images.xcassets */,
 				D7886B5418E96CDB00285828 /* Supporting Files */,
+				D7886B8218E96DCB00285828 /* CoolTableViewController.h */,
+				D7886B8318E96DCB00285828 /* CoolTableViewController.m */,
+				D7886B8918E9756F00285828 /* Common.h */,
+				D7886B8A18E9756F00285828 /* Common.m */,
 			);
 			path = CoreGraphicTutorial;
 			sourceTree = "<group>";
@@ -150,6 +159,15 @@
 				D7886B7518E96CDB00285828 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7886B8518E973B500285828 /* CustomDrawing */ = {
+			isa = PBXGroup;
+			children = (
+				D7886B8618E973E200285828 /* CustomCellBackground.h */,
+				D7886B8718E973E200285828 /* CustomCellBackground.m */,
+			);
+			path = CustomDrawing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7886B8818E973E200285828 /* CustomCellBackground.m in Sources */,
 				D7886B5E18E96CDB00285828 /* XXAppDelegate.m in Sources */,
-				D7886B6418E96CDB00285828 /* XXViewController.m in Sources */,
+				D7886B8B18E9756F00285828 /* Common.m in Sources */,
+				D7886B8418E96DCB00285828 /* CoolTableViewController.m in Sources */,
 				D7886B5A18E96CDB00285828 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -366,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -380,6 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreGraphicTutorial/CoreGraphicTutorial-Prefix.pch";
 				INFOPLIST_FILE = "CoreGraphicTutorial/CoreGraphicTutorial-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +414,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreGraphicTutorial/CoreGraphicTutorial-Prefix.pch";
 				INFOPLIST_FILE = "CoreGraphicTutorial/CoreGraphicTutorial-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

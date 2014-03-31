@@ -1,5 +1,5 @@
 //
-//  XXViewController.h
+//  CustomCellBackground.h
 //  CoreGraphicTutorial
 //
 //  Created by Xu Xian on 14-3-31.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XXViewController : UIViewController
+@interface CustomCellBackground : UIView
 
 @end
