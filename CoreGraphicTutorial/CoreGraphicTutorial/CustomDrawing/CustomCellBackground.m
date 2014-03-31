@@ -8,6 +8,8 @@
 
 #import "CustomCellBackground.h"
 
+#import "Common.h"
+
 @implementation CustomCellBackground
 
 - (id)initWithFrame:(CGRect)frame
@@ -26,10 +28,11 @@
     // Drawing code
     CGContextRef context =UIGraphicsGetCurrentContext();
     
-    UIColor *redColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:1.0];
+    UIColor *whiteColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+    UIColor *lightGrayColor = [UIColor colorWithRed:230.0/255.0 green:230.0/255.0 blue:230.0/255.0 alpha:1.0];
     
-    CGContextSetFillColorWithColor(context, redColor.CGColor);
-    CGContextFillRect(context, self.bounds);
+    CGRect paperRect = self.bounds;
+    drawLinearGradient(context, paperRect, whiteColor.CGColor, lightGrayColor.CGColor);
 }
 
 
