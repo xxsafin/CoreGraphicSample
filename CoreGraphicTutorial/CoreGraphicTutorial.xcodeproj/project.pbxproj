@@ -24,6 +24,7 @@
 		D7886B8818E973E200285828 /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = D7886B8718E973E200285828 /* CustomCellBackground.m */; };
 		D7886B8B18E9756F00285828 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = D7886B8A18E9756F00285828 /* Common.m */; };
 		D79BEE1918EA643E00E5E4FC /* CustomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D79BEE1818EA643E00E5E4FC /* CustomHeader.m */; };
+		D79BEE1C18EA9A4200E5E4FC /* CustomFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D79BEE1B18EA9A4200E5E4FC /* CustomFooter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		D7886B8A18E9756F00285828 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		D79BEE1718EA643E00E5E4FC /* CustomHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeader.h; sourceTree = "<group>"; };
 		D79BEE1818EA643E00E5E4FC /* CustomHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeader.m; sourceTree = "<group>"; };
+		D79BEE1A18EA9A4200E5E4FC /* CustomFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFooter.h; sourceTree = "<group>"; };
+		D79BEE1B18EA9A4200E5E4FC /* CustomFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFooter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +174,8 @@
 				D7886B8718E973E200285828 /* CustomCellBackground.m */,
 				D79BEE1718EA643E00E5E4FC /* CustomHeader.h */,
 				D79BEE1818EA643E00E5E4FC /* CustomHeader.m */,
+				D79BEE1A18EA9A4200E5E4FC /* CustomFooter.h */,
+				D79BEE1B18EA9A4200E5E4FC /* CustomFooter.m */,
 			);
 			path = CustomDrawing;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7886B8818E973E200285828 /* CustomCellBackground.m in Sources */,
+				D79BEE1C18EA9A4200E5E4FC /* CustomFooter.m in Sources */,
 				D79BEE1918EA643E00E5E4FC /* CustomHeader.m in Sources */,
 				D7886B5E18E96CDB00285828 /* XXAppDelegate.m in Sources */,
 				D7886B8B18E9756F00285828 /* Common.m in Sources */,

@@ -16,4 +16,6 @@ void draw1PxStroke(CGContextRef context, CGPoint startP, CGPoint endP, CGColorRe
 
 void drawGlossAndGradient(CGContextRef context, CGRect rect, CGColorRef startColor, CGColorRef endColor);
 
+CGPathRef createArcPathFromBottomOfRect(CGRect rect, CGFloat arcHeight);
+
 @end

@@ -87,4 +87,25 @@ void drawGlossAndGradient(CGContextRef context, CGRect rect, CGColorRef startCol
     drawLinearGradient(context, topHalf, glossColor1.CGColor, glossColor2.CGColor);
 }
 
+CGPathRef createArcPathFromBottomOfRect(CGRect rect, CGFloat arcHeight)
+{
+    CGFloat radius = (rect.size.width * 0.5 * rect.size.width * 0.5 / arcHeight  + arcHeight) * 0.5;
+    
+    CGPoint center = CGPointMake(CGRectGetMidX(rect),
+                                 radius + rect.size.height - arcHeight);
+    
+    CGFloat deltaAngle = asin(rect.size.width * 0.5 / radius);
+    CGFloat startAngle1 = M_PI_2 * 3 - deltaAngle;
+    CGFloat endAngle1 = M_PI_2 * 3 + deltaAngle;
+    
+    CGMutablePathRef path = CGPathCreateMutable();
+    
+    CGPathAddArc(path, NULL, center.x, center.y, radius, startAngle1, endAngle1, 0);
+    CGPathAddLineToPoint(path, NULL, CGRectGetMaxX(rect), CGRectGetMinY(rect));
+    CGPathAddLineToPoint(path, NULL, CGRectGetMinX(rect), CGRectGetMinY(rect));
+    CGPathAddLineToPoint(path, NULL, CGRectGetMinX(rect), CGRectGetMaxY(rect));
+    
+    return path;
+}
+
 @end
