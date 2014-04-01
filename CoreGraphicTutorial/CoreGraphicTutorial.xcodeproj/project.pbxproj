@@ -23,6 +23,7 @@
 		D7886B8418E96DCB00285828 /* CoolTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7886B8318E96DCB00285828 /* CoolTableViewController.m */; };
 		D7886B8818E973E200285828 /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = D7886B8718E973E200285828 /* CustomCellBackground.m */; };
 		D7886B8B18E9756F00285828 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = D7886B8A18E9756F00285828 /* Common.m */; };
+		D79BEE1918EA643E00E5E4FC /* CustomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D79BEE1818EA643E00E5E4FC /* CustomHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		D7886B8718E973E200285828 /* CustomCellBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackground.m; sourceTree = "<group>"; };
 		D7886B8918E9756F00285828 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		D7886B8A18E9756F00285828 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		D79BEE1718EA643E00E5E4FC /* CustomHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeader.h; sourceTree = "<group>"; };
+		D79BEE1818EA643E00E5E4FC /* CustomHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,8 @@
 			children = (
 				D7886B8618E973E200285828 /* CustomCellBackground.h */,
 				D7886B8718E973E200285828 /* CustomCellBackground.m */,
+				D79BEE1718EA643E00E5E4FC /* CustomHeader.h */,
+				D79BEE1818EA643E00E5E4FC /* CustomHeader.m */,
 			);
 			path = CustomDrawing;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7886B8818E973E200285828 /* CustomCellBackground.m in Sources */,
+				D79BEE1918EA643E00E5E4FC /* CustomHeader.m in Sources */,
 				D7886B5E18E96CDB00285828 /* XXAppDelegate.m in Sources */,
 				D7886B8B18E9756F00285828 /* Common.m in Sources */,
 				D7886B8418E96DCB00285828 /* CoolTableViewController.m in Sources */,
