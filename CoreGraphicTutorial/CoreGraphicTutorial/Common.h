@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#define MARGIN_TABLE_VERTICAL 9.0
+//check ios version
+#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+
 @interface Common : NSObject
 
 void drawLinearGradient(CGContextRef context, CGRect rect, CGColorRef startColor, CGColorRef endColor);

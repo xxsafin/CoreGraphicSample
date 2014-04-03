@@ -10,4 +10,7 @@
 
 @interface CustomCellBackground : UIView
 
+@property (assign, nonatomic) BOOL lastCell;
+@property (assign, nonatomic) BOOL selected;
+
 @end

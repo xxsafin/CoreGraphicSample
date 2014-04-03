@@ -55,7 +55,7 @@
                                  self.bounds.size.width - coloredBoxMargin * 2,
                                  coloredBoxHeight);
     
-    CGFloat paperMargin = 9.0;
+    CGFloat paperMargin = MARGIN_TABLE_VERTICAL;
     _paperRect = CGRectMake(paperMargin,
                             CGRectGetMaxY(_coloredBoxRect),
                             self.bounds.size.width - paperMargin * 2,

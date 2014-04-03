@@ -22,7 +22,6 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -34,6 +33,11 @@
     self.title = @"Core Graphics 101";
     self.thingsToLearn = [@[@"Drawing Rects", @"Drawing Gradients", @"Drawing Arcs"] mutableCopy];
     self.thingsLearned = [@[@"Table Views", @"UIKit", @"Objective-C"] mutableCopy];
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    if ([self.tableView respondsToSelector:@selector(setSeparatorInset:)]) {
+        [self.tableView setSeparatorInset:UIEdgeInsetsZero];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,29 +70,43 @@
     static NSString *CellIdentifier = @"CoolCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    if(![cell.backgroundView isKindOfClass:[CustomCellBackground class]])
+    {
+        CustomCellBackground *selectedBGCell = [[CustomCellBackground alloc] init];
+        selectedBGCell.selected = NO;
+        cell.backgroundView = selectedBGCell;
+    }
+    
+    if(![cell.selectedBackgroundView isKindOfClass:[CustomCellBackground class]])
+    {
+       CustomCellBackground *selectedBGCell = [[CustomCellBackground alloc] init];
+        selectedBGCell.selected = YES;
+        cell.selectedBackgroundView = selectedBGCell;
+    }
+    
     NSString *entry;
     
     if (indexPath.section == 0)
     {
         entry = self.thingsToLearn[indexPath.row];
+        ((CustomCellBackground *)cell.backgroundView).lastCell = (indexPath.row == self.thingsToLearn.count - 1);
+        ((CustomCellBackground *)cell.selectedBackgroundView).lastCell = (indexPath.row == self.thingsToLearn.count - 1);
     }
     else
     {
         entry = self.thingsLearned[indexPath.row];
+        ((CustomCellBackground *)cell.backgroundView).lastCell = (indexPath.row == self.thingsLearned.count - 1);
+        ((CustomCellBackground *)cell.selectedBackgroundView).lastCell = (indexPath.row == self.thingsLearned.count - 1);
     }
     
     cell.textLabel.text = entry;
     cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.textLabel.highlightedTextColor = [UIColor clearColor];
+
     
-    if(![cell.backgroundView isKindOfClass:[CustomCellBackground class]])
-    {
-        cell.backgroundView = [[CustomCellBackground alloc] init];
-    }
     
-    if(![cell.selectedBackgroundView isKindOfClass:[CustomCellBackground class]])
-    {
-        cell.selectedBackgroundView = [[CustomCellBackground alloc] init];
-    }
+//    cell.contentView.backgroundColor = [UIColor clearColor];
+//    tableView.backgroundColor = [UIColor clearColor];
     
     return cell;
 }
@@ -107,7 +125,21 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];
+//    
+//    if(cell.selected)
+//    {
+//        [cell setSelected:NO];
+//        [(CustomCellBackground *)cell.selectedBackgroundView setSelected:NO];
+//        [(CustomCellBackground *)cell.selectedBackgroundView setNeedsDisplay];
+//    }
+//    else
+//    {
+//        [cell setSelected:YES];
+//        [(CustomCellBackground *)cell.selectedBackgroundView setSelected:YES];
+//        [(CustomCellBackground *)cell.selectedBackgroundView setNeedsDisplay];
+//    }
+    
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
@@ -138,7 +170,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 15.0f;
+    return 15.f;
 }
 
 
